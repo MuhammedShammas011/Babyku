@@ -1,0 +1,229 @@
+{
+  "Product": [
+    {
+      "id": "1",
+      "name": "Extra Soft Touch Lamb Doll",
+      "description": "Comfortable and safe stroller for your baby",
+      "price": 100.99,
+      "image": "https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-product-img-12.jpg",
+      "category": "Toys",
+      "stars": 4.8
+    },
+    {
+      "id": "2",
+      "name": "Twin Cute Bunny Set Combo",
+      "description": "Cute and cozy clothes set for babies",
+      "price": 29.99,
+      "image": "https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-product-img-11.jpg",
+      "category": "Clothing",
+      "stars": 4
+    },
+    {
+      "id": "3",
+      "name": "Baby Feeding colourful Spoon",
+      "description": "Babies Bloom Pink Silicone Baby Feeding Spoon",
+      "price": 15.99,
+      "image": "https://babiesbloomstore.com/wp-content/uploads/2019/06/BBS-N17-FBP.jpg",
+      "category": "Protein",
+      "stars": 3.2
+    },
+    {
+      "id": "4",
+      "name": "Nutrikids Food DHA+ Orange",
+      "description": "Monitor to keep an eye on your baby",
+      "price": 79.99,
+      "image": "https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-product-img-9.jpg",
+      "category": "Protein",
+      "stars": 3.4
+    },
+    {
+      "id": "5",
+      "name": "Sunny Outdoor picnic Set",
+      "description": "Safe and comfortable car seat for babies",
+      "price": 149.99,
+      "image": "https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-product-img-8.jpg",
+      "category": "Clothing",
+      "stars": 4.3
+    },
+    {
+      "id": "6",
+      "name": "Teddy BearFlight Doll",
+      "description": " diaper bag with multiple compartments",
+      "price": 39.99,
+      "image": "https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-product-img-7.jpg",
+      "category": "Toys",
+      "stars": 4.1
+    },
+    {
+      "id": "7",
+      "name": "VitCom Nutrition Fruits Flavor",
+      "description": "Adjustable and easy-to-clean high chair for babies",
+      "price": 59.99,
+      "image": "https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-product-img-6.jpg",
+      "category": "Protein",
+      "stars": 4.2
+    },
+    {
+      "id": "8",
+      "name": "LuvLap Baby swing magic ride",
+      "description": "Soft teething toy for babies",
+      "price": 29.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgqJBtvjN09xlDzO0EKA3RTIw4dCV6ds8rrA&s",
+      "category": "Toys",
+      "stars": 4.6
+    },
+    {
+      "id": "9",
+      "name": "ZooMate 3 Animal Set Toys",
+      "description": "Comfortable bath tub for babies",
+      "price": 39.99,
+      "image": "https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-product-img-4.jpg",
+      "category": "Toys",
+      "stars": 4.2
+    },
+    {
+      "id": "10",
+      "name": " Swaddle soft Blanket for babies",
+      "description": "Soft swaddle blanket for babies",
+      "price": 19.99,
+      "image": "https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-product-img-3.jpg",
+      "category": "Clothing",
+      "stars": 4.3
+    },
+    {
+      "id": "11",
+      "name": "Baby Changing Pad waterproof",
+      "description": "Waterproof and easy-to-clean changing pad for babies",
+      "price": 14.99,
+      "image": "https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-product-img-2.jpg",
+      "category": "Clothing",
+      "stars": 4.5
+    },
+    {
+      "id": "12",
+      "name": "Doremon full pacakge include(Toys)",
+      "description": "Colorful and engaging mobile for baby cribs",
+      "price": 24.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_7sEj5T6NYUkZJx1OEr7lUTwm3kcgsNxyTQ&s",
+      "category": "Toys",
+      "stars": 4.5
+    },
+    {
+      "id": "13",
+      "name": "kids walker high quality plastic",
+      "description": "Baby Bath Essentials Checklist | Firstcry ",
+      "price": 23,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxOWro3KOMyr9ndQrnOMzp3WimharC75Wkng&s",
+      "category": "Toys",
+      "stars": 4
+    },
+    {
+      "id": "12",
+      "name": "Baby Overcoat full picnic Set",
+      "description": "Waterproof and easy-to-clean changing pad for babies",
+      "price": 14.99,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/12/AX/CA/HL/144610902/small-baby-clothes.jpg",
+      "category": "Clothing",
+      "stars": 4.3
+    },
+    {
+      "id": "13",
+      "name": "Babies Froke sleeveless Netcovered",
+      "description": "Waterproof and easy-to-clean changing pad for babies",
+      "price": 14.99,
+      "image": "/src/Components/assets/aynu.jpg",
+      "category": "Clothing",
+      "stars": 4.3
+    },
+    {
+      "id": "14",
+      "name": "Plantigo energetic kids powder",
+      "description": "Adjustable and easy-to-clean high chair for babies",
+      "price": 27.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0PoK3WvTT19EC5ffkitljP6gcCQZwlkhzQ&s",
+      "category": "Protein",
+      "stars": 4.5
+    },
+    {
+      "id": "15",
+      "name": "Gro-Baby protein powder for babies",
+      "description": "Adjustable and easy-to-clean high chair for babies",
+      "price": 35.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhgjDpMd4ZSdgcntwIbkLrHH5gBWIWFYuZ5Q&s",
+      "category": "Protein",
+      "stars": 4.4
+    },
+    {
+      "id": "16",
+      "name": "FITNE protein powder for babies",
+      "description": "Adjustable and easy-to-clean high chair for babies",
+      "price": 46.99,
+      "image": "https://myshpl.com/web-admin/images/product/1706779571_jpg",
+      "category": "Protein",
+      "stars": 4.4
+    }
+  ],
+  "users": [
+    {
+      "id": "4429",
+      "firstName": "MUHAMMED ",
+      "lastName": "SHAMMAS",
+      "email": "mhdshammas011@gmail.com",
+      "phone": "9037251498",
+      "gender": "female",
+      "address": "MACHINGAL,MEMURI",
+      "password": "909090",
+      "confirmPassword": "909090",
+      "admin":"true"
+    },
+  
+    {
+      "id": "301b",
+      "firstName": "maher",
+      "lastName": "ali",
+      "email": "maheralimattummal@gmail.com",
+      "phone": "9037251498",
+      "gender": "male",
+      "address": "mattummal",
+      "password": "909090",
+      "confirmPassword": "909090",
+      "admin":"false"
+    },
+    {
+      "id": "86bd",
+      "firstName": "muhammed",
+      "lastName": "hashim",
+      "email": "hashim123@gmail.com",
+      "phone": "9037251498",
+      "gender": "male",
+      "address": "MACHINGAL,MEMURI",
+      "password": "manu",
+      "confirmPassword": "manu",
+       "admin":"false"
+    },
+    {
+      "id": "a372",
+      "firstName": "diyana",
+      "lastName": "pandarathodi",
+      "email": "diyanapandarathodi@gmail.com",
+      "phone": "9037251498",
+      "gender": "female",
+      "address": "MACHINGAL,MEMURI",
+      "password": "dinu",
+      "confirmPassword": "dinu",
+       "admin":"false"
+    },
+    {
+      "id": "1992",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "iamjohndoe@gmail.com",
+      "phone": "9037251498",
+      "gender": "male",
+      "address": "MACHINGAL,MEMURI",
+      "password": "909090",
+      "confirmPassword": "909090",
+       "admin":"false"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+.formal-image img {
+    width:80%;
+    position: relative;
+    border-radius: 10px;
+  
+  }
+  .nothing{
+    width:100%;
+    height:300px
+  }
+  .formal-btn{
+    background-color: rgb(251, 250, 248);
+    color: black;
+    position: relative;  
+    top: -100px; 
+    left:15%; 
+    width:21%;
+    border-radius: 50px; 
+    font-weight: bold; 
+    font-size: medium;                                                                                                                                                        
+  }
+  
+  
+

@@ -1,0 +1,187 @@
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(to right, #f6f6f9, #fdf3f4);
+  padding: 2rem;
+
+
+}
+
+
+.about-background {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 3rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.about-background::before,
+.about-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: rgba(246, 246, 249, 0.8);
+  z-index: -1;
+}
+
+.about-background::before {
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+.about-background::after {
+  right: 0;
+  background: rgba(253, 243, 244, 0.6);
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-us-text {
+  color: #ec7272;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3d194a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.left-highlight {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #3d194a;
+  font-style: italic;
+  max-width: 40%;
+}
+
+.right-text {
+  font-size: 1rem;
+  color: #606060;
+  max-width: 50%;
+  line-height: 1.6;
+}
+
+.about-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.baby-image {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.baby-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.stats {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3d194a;
+}
+
+.stat p {
+  font-size:medium;
+  color: #3d194a;
+  margin-top: 0.5rem;
+}
+
+.about-history {
+    margin-top: 4rem;
+    text-align: center;
+    position: relative;
+    padding: 2rem; 
+    background-image: url('https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-cta-blob-bg-overlay.svg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  
+  .history-heading {
+    color: #3d194a;
+    margin-bottom: 1rem;
+    font-family: 'Sriracha', handwriting;
+    font-size: 74px;
+    font-size: 4.625rem;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+  
+  .history-text {
+    font-size: 1rem;
+    color: #606060;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: bold;
+  }
+  
+  /* Rise Timeline */
+  .rise-timeline {
+    margin-top: 2rem;
+    text-align: left; 
+    font-weight: bold;
+    color: black;
+  }
+  
+  .rise-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3d194a;
+    margin-bottom: 1rem;
+  }
+  
+  .rise-timeline ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  .rise-timeline li {
+    font-size: 1rem;
+    color: #606060;
+    margin: 0.5rem 0; 
+  }
+  
