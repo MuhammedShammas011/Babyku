@@ -1,0 +1,98 @@
+.shop-container{
+    margin-top: 200px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #6A1B9A; /* Light purple border */
+    background-color: transparent;
+    color: #6A1B9A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pagination-btn.active {
+    background-color: #6A1B9A; /* Darker purple */
+    color: #fff;
+  }
+  
+  .pagination-btn.next-btn {
+    font-size: 20px;
+  }
+  
+  .pagination-btn:hover {
+    background-color: #6A1B9A;
+    color: #fff;
+  }
+  
+  .pagination-btn:disabled {
+    border-color: #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .shop-heading{
+    font-size: 48px;
+    color: #53376a;
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    bottom: 150px;
+    
+  }
+  .filter-icon{
+    height:16px;
+    float: left;
+    position: relative;
+    bottom:102px;
+    left: 330px;
+    color:rgb(109, 109, 108);
+    cursor: pointer;
+  }
+  .shop-showing{
+    font-size: 18px;
+    color:rgb(109, 109, 108);
+    position: relative;
+    bottom:70px;
+    margin-left: 4%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+  }
+  .filter-text{
+    font-size: 18px;
+    color:rgb(0, 0, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    position: relative;
+    bottom:120px;
+    right:74%;
+    float: right;
+  }
+  .product-grid-shop{
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
+    gap: 40px;
+  }
+  @media (max-width: 768px) {
+    .filter-text{
+      position: relative;
+      right:355px ;
+    }
+  }

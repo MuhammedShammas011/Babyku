@@ -36,19 +36,19 @@ const About = () => {
           <div className="stats">
             <div className="stat">
               <h2>
-                <CountUp start={1} end={1000} duration={3} separator="," />+
+                <CountUp start={1} end={1000} duration={5} separator="," />+
               </h2>
               <p>Unique products</p>
             </div>
             <div className="stat">
               <h2>
-                <CountUp start={1} end={40} duration={3} />
+                <CountUp start={1} end={40} duration={5} />
               </h2>
               <p>Brands</p>
             </div>
             <div className="stat">
               <h2>
-                <CountUp start={1} end={20} duration={3} />
+                <CountUp start={1} end={20} duration={5} />
               </h2>
               <p>Stores</p>
             </div>

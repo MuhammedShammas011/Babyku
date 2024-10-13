@@ -59,9 +59,6 @@ const Home = () => {
     },
   ];
 
-
-
-
   
   const renderStars = (rating) => {
     const stars = [];
@@ -86,26 +83,27 @@ const Home = () => {
       <div>
         <img src={background_img} alt="backimg" className="back-img" />
       </div>
-      <div className="best-selling-section">
+      <div className="best-selling-section" >
         <h2 className="section-title">Best sellers</h2>
         <div className="product-grid">
-          {bestSellingProducts.map((Product) => (
-            <div key={Product.id} className="product-card">
-              <img src={Product.image} alt={Product.name} className="product-imag" />
-              <h3 className="product-name">{Product.name}</h3>
-              <p className="product-price">${Product.price}</p>
-              <p className="product-rating">Rating: {Product.stars} ★</p>
-              <div>
-                <button
-                  className="add-to-cart-button"
-                  onClick={() => handleAddToCart(Product)}
-                >
-                  {cartItems.find((item) => item.id === Product.id) ? "Added to Cart" : "Add to Cart"}
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+  {bestSellingProducts.map((Product) => (
+    <div key={Product.id} className="product-card">
+      <img src={Product.image} alt={Product.name} className="product-imag" />
+      <h3 className="product-name">{Product.name}</h3>
+      <p className="product-price">${Product.price}</p>
+      <p className="product-rating">Rating: {Product.stars} ★</p>
+      <div> 
+        <button
+          className="add-to-cart-button"
+          onClick={() => handleAddToCart(Product)}
+        >
+          {cartItems.find((item) => item.id === Product.id) ? "Added to Cart" : "Add to Cart"}
+        </button>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
 
       <section className="testimonial-section">

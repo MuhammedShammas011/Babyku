@@ -2,16 +2,15 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./pageStyle/Login.css";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-
-  const [isLoggedIn, setIsLoggedIn] = useState(
-    !!localStorage.getItem("isLoggedIn")
-  );
+  const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("isLoggedIn"));
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
@@ -22,40 +21,60 @@ const Login = () => {
     }
   }, [isLoggedIn]);
 
-  const handleLoginSubmit = async (e) => {
-    e.preventDefault();
+ const handleLoginSubmit = async (e) => {
+  e.preventDefault();
 
-    if (email === "" || password === "") {
-      setError("Please fill in all fields");
-    } else {
-      setError("");
-      try {
-        const response = await axios.get("http://localhost:5000/users");
-        const users = response.data;
+  if (email === "" || password === "") {
+    setError("Please fill in all fields");
+  } else {
+    setError("");
+    try {
+      const response = await axios.get("http://localhost:5000/users");
+      const users = response.data;
 
-        console.log(users); // Log all users to see their structure
-        const user = users.find(
-          (user) => user.email === email && user.password === password
-        );
+      const user = users.find((user) => user.email === email && user.password === password);
 
-        console.log(user); // Log the user found
-
-        if (user) {
-          alert("Successfully logged in");
-          setIsLoggedIn(true);
-          localStorage.setItem("isLoggedIn", "true");
-          localStorage.setItem("firstName", user.firstName);
-          localStorage.setItem("lastName", user.lastName);
-          navigate("/");
-        } else {
-          setError("Invalid email or password");
+      if (user) {
+        if (user.blocked) {
+        
+          toast.error("Admin Blocked You", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            theme: "colored",
+            transition: "Slide",
+            style: { whiteSpace: "nowrap" },
+          });
+          return;
         }
-      } catch (error) {
-        console.error("Error fetching users:", error);
-        setError("Error logging in. Please try again later.");
+
+        setIsLoggedIn(true);
+        localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("firstName", user.firstName);
+        localStorage.setItem("lastName", user.lastName);
+
+       
+        notify(); 
+        if (user.admin === "true") {
+          localStorage.setItem("isAdmin", "true");
+          navigate("/dashboard");
+        } else {
+          localStorage.setItem("isAdmin", "false");
+          navigate("/"); 
+        }
+      } else {
+        setError("Invalid email or password");
       }
+    } catch (error) {
+      console.error("Error fetching users:", error);
+      setError("Error logging in. Please try again later.");
     }
-  };
+  }
+};
+
 
   const handleLogout = () => {
     setIsLoggedIn(false);
@@ -64,24 +83,53 @@ const Login = () => {
     localStorage.removeItem("lastName");
     setEmail("");
     setPassword("");
-    alert("You have been logged out");
+  };
+
+  const notify = () => {
+    toast.success("Logged in Successfully", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      theme: "colored",
+      transition: "Slide",
+      style: { whiteSpace: "nowrap" },
+    });
+  };
+
+  const notifylogout = () => {
+    toast.error("Logged out", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      theme: "colored",
+      transition: "Slide",
+      style: { whiteSpace: "nowrap" },
+    });
   };
 
   return (
     <div className="login-container">
       {isLoggedIn ? (
-        <>
-          <h2>
+        <div className="logout-container">
+          <h3 style={{ textAlign: "center", paddingTop: "10px" }}>
             Hi {firstName} {lastName}!
-          </h2>
-          <button onClick={handleLogout} className="logout-btn">
+          </h3>
+          <button
+            onClick={() => {
+              handleLogout();
+              notifylogout();
+            }}
+            className="logout-btn"
+          >
             Logout
           </button>
-          &nbsp;&nbsp;
-          <button onClick={() => navigate("/")} className="back-btn">
-            Back to Home
-          </button>
-        </>
+        </div>
       ) : (
         <>
           <h2>Login</h2>
@@ -107,9 +155,11 @@ const Login = () => {
               />
             </div>
             {error && <p className="error-message">{error}</p>}
-            <button type="submit">Login</button>
+            <button type="submit" onClick={notify}>
+              Login
+            </button>
             <p className="log-register">
-              Don't have an Account? <Link to="/Register">Register</Link>
+              Don't have an account? <Link to="/Register">Register</Link>
             </p>
           </form>
         </>

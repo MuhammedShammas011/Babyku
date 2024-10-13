@@ -128,3 +128,31 @@
 .nav-items li a:hover::after {
   width: 100%; 
 }
+.search-box {
+  position: relative; /* Ensure that suggestions are positioned relative to the search box */
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%; /* Position the suggestions below the search input */
+  left: 7%; /* Align to the left of the input */
+  background: white;
+  border:0px solid #ccc;
+  width: calc(100% + 50px); /* Adjust width to fit with some padding */
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #0c0952a2;
+}
+
+

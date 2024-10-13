@@ -1,0 +1,53 @@
+.admin-container {
+    height: 100vh;
+    width: 250px;
+    background-color: #bebdf4a2;
+ 
+  }
+  
+  .admin-logo {
+    margin: 60px;
+  }
+  
+  .admin-container {
+    text-align: center;
+  }
+  
+  .admin-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-menu-item {
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .admin-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px 42px;
+    position: relative;
+    top: 42px;
+    color: rgb(96, 89, 89);
+    cursor: pointer;
+  }
+  
+  .admin-menu-text {
+    color: rgb(96, 89, 89);
+    cursor: pointer;
+  }
+  
+  .admin-menu-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+
+  
+  .admin-menu-item:hover .admin-icon,
+  .admin-menu-item:hover .admin-menu-text {
+    color: #4A90E2; /* Text and icon color on hover */
+  }
+  

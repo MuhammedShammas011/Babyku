@@ -1,0 +1,199 @@
+/* User.css
+
+.user-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .user-list-heading {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .user-list-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+  }
+  
+  .user-list-table th,
+  .user-list-table td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .user-list-table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .user-list-table tr {
+    background-color: #ecf0f1;
+    transition: all 0.3s ease;
+  }
+  
+  .user-list-table tr:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .user-list-table {
+      font-size: 14px;
+    }
+  
+    .user-list-table th,
+    .user-list-table td {
+      padding: 10px;
+    }
+  
+    .view-button {
+      padding: 6px 10px;
+    }
+  } */
+
+
+
+  /* User.css */
+
+.user-list-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-list-heading {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+  }
+  
+  .user-list-heading::after {
+    content: '';
+    display: block;
+     width: 150px; 
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    margin: 20px auto;
+    border-radius: 2px;
+  }
+  
+  .user-list-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+  
+  .user-list-table th,
+  .user-list-table td {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .user-list-table th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .user-list-table tr {
+    background-color: white;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 10px;
+  }
+  
+  .user-list-table tr:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-list-table td {
+    position: relative;
+  }
+  
+  .user-list-table td::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(52, 152, 219, 0.2), transparent);
+  }
+  
+  .view-button {
+    display: inline-block;
+    padding: 10px 20px;
+   background-color:  #1982c4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+  }
+  
+  .view-button:hover {
+    background-color: #104f79;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(46, 204, 113, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .user-list-container {
+      padding: 20px;
+    }
+  
+    .user-list-heading {
+      font-size: 2em;
+    }
+  
+    .user-list-table {
+      font-size: 14px;
+    }
+  
+    .user-list-table th,
+    .user-list-table td {
+      padding: 15px 10px;
+    }
+  
+    .view-button {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  }

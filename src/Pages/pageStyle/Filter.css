@@ -1,0 +1,51 @@
+.filter-sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to right, #fbfbfb, #eaf3ff);
+
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    display: none;
+  }
+  
+  .filter-sidebar.open {
+    left: 0; 
+    display: block; 
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: -140px;
+    color: black;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+.filter-btn{
+    background-color: rgb(23, 94, 236);
+}  
+.filter-btn:hover{
+    background-color: rgb(12, 64, 166);
+}
+
+
+  
