@@ -437,34 +437,6 @@
       "admin": "false",
       "blocked": false,
       "cart": []
-    },
-    {
-      "id": "0450",
-      "firstName": "hashim",
-      "lastName": "manu",
-      "email": "hashimmanu@gmail.com",
-      "phone": "9037251498",
-      "gender": "male",
-      "address": "MACHINGAL,MEMURI",
-      "password": "909090",
-      "confirmPassword": "909090",
-      "admin": "false",
-      "blocked": false,
-      "cart": []
-    },
-    {
-      "id": "8180",
-      "firstName": "shaheedul",
-      "lastName": "aslam",
-      "email": "shaheedulaslam@gmail.com",
-      "phone": "9037251498",
-      "gender": "male",
-      "address": "MACHINGAL,MEMURI",
-      "password": "909090",
-      "confirmPassword": "909090",
-      "admin": "false",
-      "blocked": false,
-      "cart": []
     }
   ]
 }

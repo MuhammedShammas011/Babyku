@@ -115,7 +115,7 @@ const Payment = () => {
               required
             />
             <input
-              type="text"
+              type="password"
               placeholder="CVV"
               value={billingInfo.cvv}
               onChange={(e) => setBillingInfo({ ...billingInfo, cvv: e.target.value })}
